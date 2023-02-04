@@ -9,12 +9,12 @@ Console.Write("Введите первое число: ");
 int num1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int num2 = int.Parse(Console.ReadLine());
-int rem =num2%num1;
-if(rem == 0)
+int rem = num1 % num2;
+if (rem == 0)
 {
-    Console.WriteLine($"{num2} является кратным {num1}");
+    Console.WriteLine($"{num1} является кратным {num2}");
 }
 else
 {
-     Console.WriteLine($"{num2} является кратным {num1}.Остаток деления {num2} на {num1} равен {rem}");
+    Console.WriteLine($"{num1} является кратным {num2}.Остаток деления {num1} на {num2} равен {rem}");
 }
